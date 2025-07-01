@@ -1,4 +1,4 @@
-// Basic Netflix-style Streaming Website (FreeFlix)
+// Basic Netflix-style Streaming Website (FreeFlixx)
 // React + TailwindCSS + Fake video data
 
 const videos = [
@@ -51,7 +51,7 @@ export default function FreeFlix() {
           <div className="aspect-video">
             <iframe
               width="100%"
-              height="400"
+              height="360"
               src={selectedVideo.videoUrl}
               title="Video Player"
               allowFullScreen
@@ -77,3 +77,7 @@ export default function FreeFlix() {
     </div>
   );
 }
+<video width="640" height="360" controls>
+  <source src="path_to_your_video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
